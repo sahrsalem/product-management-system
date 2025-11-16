@@ -1,0 +1,89 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+	/*background: #222;*/
+	background: linear-gradient(to right, #222 0%, #444 50%, #222 100%);
+
+
+
+	color: #fff;
+	font-family: system-ui, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+.crud {
+	 width: 80%;
+	 margin: auto;
+}
+.head {
+	text-align: center;
+	text-transform: uppercase;
+	margin: 10px 0;
+}
+input {
+	width: 100%;
+	height: 30px;
+	outline: none;
+	border: none;
+	background: #111;
+	margin: 4px 0;
+	border-radius: 4px;
+	padding: 4px;
+	color: #fff;
+}
+input:focus{
+	background: #000;
+	transform: scale(1.1);  /* لتكبير المستطيلات عندما ندخل فيها البيانات   */
+} 
+.price input {
+	width: 20%;
+
+}
+#total {
+	background: #a00d02;
+	padding: 5px 2px;
+	border-radius: 4px;
+}
+#total::before {
+	content: 'Total: ';  /* لكتابه كلمة توتل  */
+}
+button {
+	width: 100%;
+	height: 30px;
+	border: none;
+	cursor: pointer;
+	/*background: #470053;*/
+	background: linear-gradient(to right, #470053, #d1c4e9);
+	
+
+
+	color: #fff;
+	border-radius: 20px;
+	transition: 0.5s;
+}
+button:hover {
+	/*background: #9429a7;*/
+	background: linear-gradient(to right, #470053, #dbefff);
+	letter-spacing: 1px;
+}
+.btnSearch {
+	display: flex; /* لجعلهم جنب بعض بنستخدم الفليكس بوكس */
+    justify-content: space-between;  /* لترك مسافات بينهم */
+}
+.btnSearch button {
+	width: 45%;   /* لتقليل حجمهم */
+}
+#deleteAll {
+	margin: 20px 0;
+}
+table {
+	width: 100%;
+	text-align: center;
+	margin: 10px 0;
+}
+table th {
+	text-transform: uppercase;
+}
+th,td {
+	padding: 5px;
+}
